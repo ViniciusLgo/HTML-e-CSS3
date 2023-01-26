@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Midias em Html5</title>
 </head>
 <body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos ou aumente/diminua o navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem flexivel">
+        </picture>
+        
+        <h1> Reproduzindo Audio</h1>
+        <p>Vamos aprender a reproduzir audio em html5</p>
+
+        <audio src="midia/Emotional Mess - Amy Lynn & the Honey Men.mp3" controls ></audio> <!-- MP# WAV OGG -formatos de audio (autoplay p dar auto play) -->
+
+        
+        <audio preload="metadata"  controls loop>
+            <source src="midia/God Rest Ye Merry Gentlmen - DJ Williams.mp3" type ="audio/mpeg">
+            <source src="midia/God Rest Ye Merry Gentlmen - DJ Williams.ogg" type="audio/ogg">
+            <source src="midia/God Rest Ye Merry Gentlmen - DJ Williams.wave" type="audio/wave">
+
+            <p>Infelismente seu nav nao consegue reproduzir audio <a href="midia/God Rest Ye Merry Gentlmen - DJ Williams.mp3">Clique aqui para baixar o arquivo</a></p>
+            
+        </audio>
+
+        
+
+
     
 </body>
 </html>
